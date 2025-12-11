@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Geist';
+  src:
+    url('./assets/fonts/Geist-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Geist-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+#root {
+  max-width: 1980px;
+  margin: 0 10px;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+pre {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid rgb(29, 124, 202);
+  border-radius: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+p {
+  padding: 5px;
+  text-align: left;
+  margin: 5px;
+}
+
+.red-line {
+  padding-left: 50px;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 50px;
+  left: 50px;
+  text-align: left;
+  background: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.main-link {
+  color: oklch(71.5% 0.143 215.221);
+}
+.main-link:hover {
+  color: oklch(71.5% 0.143 215.221);
+  text-decoration: underline;
+}
+
+.active {
+  color: rgb(29, 124, 202);
+  border-right: solid 2px rgb(29, 124, 202);
+}
+
+.navigation {
+  scrollbar-width: thin;
+  max-height: 100vh;
+  min-width: max-content;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+  border-width: 0px;
+  padding: 1.25rem 0px 1.25rem 1.25rem;
+
+  display: flex;
+  position: sticky;
+
+  left: 50px;
+  text-align: left;
+}
+
+.red {
+  color: #cd3c3a;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.nav-link:hover {
+  color: inherit;
+  background-color: rgba(29, 124, 202, 0.391);
+  border-radius: 10px;
+}
+
+.next-page {
+  padding: 4px 50px;
+  cursor: pointer;
+}
+.next-page:hover {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.471);
+  transition: 0.3s;
+}
