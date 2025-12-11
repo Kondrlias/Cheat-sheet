@@ -23,7 +23,6 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<NoContent />} />
         <Route path="/book" element={<Book />}>
           <Route index path="components" element={<Components />} />
           <Route path="props" element={<Props />} />
@@ -39,6 +38,7 @@ function App() {
           <Route path="forms" element={<Forms />} />
           <Route path="refs" element={<Refs />} />
         </Route>
+        <Route path="*" element={<NoContent />} />
       </Routes>
     </div>
   );
